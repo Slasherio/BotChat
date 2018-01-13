@@ -1,34 +1,31 @@
-body {
-  margin: 0;
-  padding: 0;
-}
-
 .wrapper {
   display: flex;
   justify-content: space-around;
+  margin-top: 20px;
 }
 
 .chat {
   width: 60%;
-  height: 80vh;
-  border: 1px solid black;
+  height: 91vh;
+  border: 1px solid #ded9d9;
   border-radius: 25px;
-  overflow: auto;
 }
 
 .users {
   width: 30%;
-  height: 80vh;
+  height: 91vh;
   position: relative;
-  border: 1px solid black;
+  border: 1px solid #ded9d9;
   border-radius: 25px;
-  overflow: auto;
 }
 
 .heading {
-  background-color: lightgray;
+  background-color: #36f7dcfa;
   padding: 15px;
   border-radius: 25px 25px 0px 0;
+}
+.heading span {
+  font: 600 14px/14px sans-serif;
 }
 
 .add {
@@ -36,23 +33,21 @@ body {
   left: 33%;
   color: #fff;
   background-color: #337ab7;
-  border: 1px solid transparent;
-  border-color: 1px solid #337ab7;
+  border: 1px solid #74beff;
   padding: 10px 50px;
   border-radius: 10px;
   cursor: pointer;
-  margin-bottom: 15px;
+  outline: none;
 }
 
 .user-container {
-  display: flex;
-  margin: 10px;
-  flex-direction: column;
+  overflow: auto;
+  height: 79vh;
 }
 
 .user {
   display: flex;
-  margin-bottom: 15px;
+  margin: 10px;
   border: 1px solid black;
   border-radius: 15px;
   border-color: teal;
@@ -76,7 +71,7 @@ span {
 }
 
 h1 {
-  font: 600 20px sans-serif;
+  font: 600 20px 'Kavivanar';
   color: #71c771;
 }
 
@@ -90,10 +85,16 @@ h1 {
 .message img {
   display: block;
   margin: 10px;
+  border-radius: 15px;
 }
 
 .info {
   display: flex;
   justify-content: space-around;
   flex-direction: column;
+}
+
+.conversation {
+  height: 83vh;
+  overflow: auto;
 }
